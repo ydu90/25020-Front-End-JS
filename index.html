@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inversión Inteligente</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="img/invesment.png" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-title">
+        <img src="img/invesment.png" alt="Logo de Inversión Inteligente">
+        <h1>Inversión Inteligente</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#reseñas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="hero">
+      <video autoplay muted loop>
+        <source src="img/fondo.mp4" type="video/mp4" />
+      </video>
+      <div class="overlay">
+        <h2>Descubrí el plan de inversión ideal para vos</h2>
+        <p>Adaptado a tu perfil financiero</p>
+      </div>
+    </section>
+
+    <!-- Sección de Planes -->
+    <section id="planes">
+      <h2>Planes de Inversión</h2>
+      <div class="planes-container">
+        <div class="plan-card">
+          <img src="img/conservador.jpg" alt="Plan Conservador">
+          <h3>Plan Conservador</h3>
+          <p>Para quienes priorizan la seguridad del capital. Estabilidad y retornos constantes.</p>
+          <ul>
+            <li>✔️ Riesgo Bajo</li>
+            <li>📈 Retorno Estimado: 5-8% anual</li>
+            <li>💼 Enfoque en bonos y fondos de renta fija</li>
+          </ul>
+        </div>
+
+        <div class="plan-card">
+          <img src="img/moderado.jpg" alt="Plan Moderado">
+          <h3>Plan Moderado</h3>
+          <p>Equilibrio entre riesgo y estabilidad. Ideal para quienes buscan crecimiento con protección.</p>
+          <ul>
+            <li>✔️ Riesgo Medio</li>
+            <li>📈 Retorno Estimado: 10-14% anual</li>
+            <li>💼 Diversificación en acciones, bonos y ETFs</li>
+          </ul>
+        </div>
+
+        <div class="plan-card">
+          <img src="img/agresivo.jpg" alt="Plan Agresivo">
+          <h3>Plan Agresivo</h3>
+          <p>Para inversores con alta tolerancia al riesgo. Rendimientos potenciales altos a largo plazo.</p>
+          <ul>
+            <li>✔️ Riesgo Alto</li>
+            <li>📈 Retorno Estimado: 15-20% anual</li>
+            <li>💼 Enfocado en acciones y criptomonedas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Reseñas -->
+    <section id="reseñas">
+      <h2>¿Qué opinan nuestros clientes?</h2>
+      <div class="reseñas-grid">
+        <div class="review-card">
+          <img src="img/clara.jpg" alt="Clara">
+          <p>"El plan moderado fue perfecto para mí. Siento seguridad con buen rendimiento."</p>
+          <h4>Clara</h4>
+        </div>
+        <div class="review-card">
+          <img src="img/diego.jpg" alt="Diego">
+          <p>"La plataforma es fácil de usar y el asesoramiento fue excelente."</p>
+          <h4>Diego</h4>
+        </div>
+        <div class="review-card">
+          <img src="img/laura.jpg" alt="Laura">
+          <p>"Recomiendo el plan conservador para quienes quieren empezar sin riesgos."</p>
+          <h4>Laura</h4>
+        </div>
+        <div class="review-card">
+          <img src="img/martin.jpg" alt="Martín">
+          <p>"Estoy feliz con mis ganancias. Opté por el plan agresivo y ha dado frutos."</p>
+          <h4>Martín</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+      <div class="contact-box">
+        <h2><span>¿Aún tienes <strong>dudas</strong>?</span></h2>
+        <p>Ponte en contacto con nosotros:</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <label for="nombre"><strong>Nombre</strong> <span style="color: red">*</span></label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email"><strong>Email</strong> <span style="color: red">*</span></label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje"><strong>Mensaje</strong> <span style="color: red">*</span></label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+
+          <button type="submit">ENVIAR MENSAJE</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Inversión Inteligente. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
