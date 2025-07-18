@@ -1,37 +1,84 @@
-Proyecto: eCommerce de Planes de Inversión
+# Proyecto: Página de Planes de Inversión
 
-Este proyecto es una página web tipo eCommerce que ofrece diferentes planes de inversión personalizados según el perfil del inversor: Conservador, Moderado y Agresivo.
+Este proyecto consiste en una página web dinámica y responsive que muestra planes de inversión, permite a los usuarios agregarlos a un carrito de compras y mantener la información persistente incluso al recargar o cerrar la página.
 
-Contenido del proyecto
+## 🌐 Tecnologías Utilizadas
 
-Estructura semántica con etiquetas header, nav, main, section y footer.
+- HTML
+- CSS
+- JavaScript
+- Fetch API
+- LocalStorage
 
-Lista de navegación con enlaces a las secciones principales: Inicio, Planes, Reseñas y Contacto.
+---
 
-Sección de productos con tarjetas responsivas mediante Flexbox.
+## 🚀 Funcionalidades
 
-Sección de reseñas usando Grid layout.
+### 🛒 Carrito de Compras Dinámico
 
-Sección de contacto con formulario funcional integrado con Formspree.
+- Los usuarios pueden **agregar productos/planes al carrito** desde las tarjetas de la sección "Planes de Inversión".
+- Se muestra un **contador dinámico** con la cantidad total de productos en el carrito.
+- Se puede **modificar la cantidad** de cada producto directamente desde el carrito.
+- Permite **eliminar productos** del carrito.
+- El **total se actualiza automáticamente** al modificar cantidades o eliminar productos.
+- El estado del carrito se guarda automáticamente en `localStorage`.
 
-Estilos aplicados en un archivo styles.css externo.
+---
 
-Tipografías de Google Fonts.
+### 📦 Visualización de Productos
 
-Fondo multimedia en video en la sección de héroe.
+- Los productos se cargan desde un **array local** predefinido (no se usa una API externa).
+- Se muestran en forma de **tarjetas atractivas** con:
+  - Imagen
+  - Título
+  - Precio en negrita y tamaño aumentado
+  - Botón “Agregar al carrito” con feedback de confirmación.
 
-Archivos importantes
+---
 
-index.html: Archivo principal con la estructura de la página.
+### 📄 Validación de Formulario
 
-styles.css: Archivo con los estilos CSS personalizados.
+- Validación de campos obligatorios y formato correcto del correo electrónico.
+- Se muestra un mensaje de error si hay campos inválidos.
 
-Multimedia: incluye imágenes para los perfiles de inversión y un video de fondo.
+---
 
-Cómo utilizar
+### 🎨 Diseño y Accesibilidad
 
-Abrir el archivo index.html en un navegador web.
+- Estilo visual profesional y moderno usando CSS puro.
+- **Imágenes con atributo `alt`** para mejorar la accesibilidad.
+- Navegación posible con teclado.
+- Botón flotante para **subir al principio de la página**.
 
-Verificar que el formulario de contacto funcione correctamente con la configuración de Formspree.
+---
 
-Asegurarse de que los archivos multimedia estén en la misma carpeta o ruta especificada.
+### 🔍 SEO Básico
+
+- Uso de `meta` etiquetas como `description`, `keywords` y `viewport`.
+- Estructura semántica del HTML (`header`, `main`, `section`, `footer`).
+
+---
+
+## 📁 Estructura del Proyecto
+
+/proyecto
+│
+├── index.html # Página principal
+├── style.css # Estilos CSS
+├── script.js # Lógica e interactividad JS
+├── /img # Imágenes y recursos estáticos
+└── README.md # Documentación del proyecto
+
+---
+
+## 🧪 Cómo Ejecutar el Proyecto
+
+1. Cloná o descargá este repositorio.
+2. Abrí `index.html` con tu navegador favorito.
+3. Interactuá con los productos, añadilos al carrito, validá el formulario, etc.
+
+---
+
+## 💻 Autor
+
+Desarrollado por Y-Mora.
